@@ -1,0 +1,25 @@
+{
+  "name": "multiple-criteria-decision-making-app",
+  "version": "1.0.0",
+  "description": "Multiple criteria decision making app",
+  "author": "Jordan Morlet <mjstryker51@gmail.com>",
+  "license": "GPL-3.0-or-later",
+  "private": "true",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/rimraf",
+      "**/rimraf/**"
+    ]
+  },
+  "scripts": {
+    "start": "lerna run start",
+    "test": "lerna run test",
+    "build": "lerna run build"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}

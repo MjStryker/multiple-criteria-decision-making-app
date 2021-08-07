@@ -1,0 +1,18 @@
+# General
+*.lock*
+*.log*
+
+# Misc
+.DS_Store
+.vscode
+
+# Dependencies
+node_modules
+package-lock.json
+
+# Production
+dist
+build
+
+# Security
+*.env*

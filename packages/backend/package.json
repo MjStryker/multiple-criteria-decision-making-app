@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Multiple criteria decision making app backend package",
+  "author": "Jordan Morlet <mjstryker51@gmail.com>",
+  "license": "GPL-3.0-or-later",
+  "private": "true",
+  "main": "build/index.js",
+  "typings": "build/index.d.ts",
+  "scripts": {
+    "test": "echo \"no test specified...\"",
+    "build": "rimraf build && tsc",
+    "start": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec 'ts-node' src/index.ts"
+  },
+  "dependencies": {
+    "@types/node": "^16.4.13",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.3.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12",
+    "ts-node": "^10.1.0"
+  }
+}
